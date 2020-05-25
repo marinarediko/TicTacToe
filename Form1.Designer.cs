@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelTurn = new System.Windows.Forms.Label();
             this.Grid.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,17 +184,29 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.Player_Click);
             // 
+            // labelTurn
+            // 
+            this.labelTurn.AutoSize = true;
+            this.labelTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTurn.Location = new System.Drawing.Point(0, 0);
+            this.labelTurn.Name = "labelTurn";
+            this.labelTurn.Size = new System.Drawing.Size(92, 20);
+            this.labelTurn.TabIndex = 1;
+            this.labelTurn.Text = " Player Turn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.labelTurn);
             this.Controls.Add(this.Grid);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Grid.ResumeLayout(false);
             this.Grid.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -209,6 +222,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelTurn;
     }
 }
 
